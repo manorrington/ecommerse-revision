@@ -2,7 +2,7 @@ Overview
 An updated version of my previous Ecommerse project.
 
 Requirements
-The project must be used as a part of your final portfolio.  Be sure to adhere to the guidelines below.  
+The project must be used as a part of your final portfolio.  Be sure to adhere to the guidelines below. \n\ 
 The products must be mainstream and professional. 
 Use Create React App to create a component based application to display your former products page from the first iteration of the project.
 Create a Database that contains your products (name, description, price, etc)
