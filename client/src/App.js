@@ -1,30 +1,18 @@
-import "./App.css";
-import { useState } from "react";
-import { useEffect } from "react";
-import Axios from "axios";
+import { Routes, Route } from 'react-router-dom';
+
+import Nav from './routes/nav/nav.component';
+import Home from './routes/home/home.component';
+import Products from './routes/products/products.component';
 
 function App() {
-  const [productList, setProductList] = useState([]);
-
-  useEffect(() => {
-    Axios.get("http://localhost:3001/products").then((res) => {
-      setProductList(res.data);
-    });
-  });
-
-  return (
-    <div className="App">
-      <p>hey</p>
-      {productList.map((val) => {
-        return (
-          <div>
-            <h3>Name: {val.name}</h3>
-            <img src={val.img} />
-          </div>
-        );
-      })}
-    </div>
-  );
-}
+  return(
+    <Routes>
+      <Route path='/' element={<Nav />} >
+      <Route index element={<Home />} />
+      <Route path='/products' element={<Products />} />
+      </Route>
+    </Routes>
+  )
+};
 
 export default App;
