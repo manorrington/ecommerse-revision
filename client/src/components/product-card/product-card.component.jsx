@@ -1,4 +1,4 @@
-import '../../components/product-card/product-card.styles.scss';
+import './product-card.styles.scss';
 
 import { useState } from "react";
 import { useEffect } from "react";
@@ -6,9 +6,9 @@ import Axios from "axios";
 
 function Product() {
   const [productList, setProductList] = useState([]);
-  const endpoint = 'https://dg1clcdun2.execute-api.us-east-1.amazonaws.com/dev/products'
+
   useEffect(() => {
-    Axios.get(endpoint).then((res) => {
+    Axios.get("http://localhost:3001/products").then((res) => {
       setProductList(res.data);
     });
   });
@@ -18,10 +18,10 @@ function Product() {
       {/* <p>Product Page</p> */}
       {productList.map((val) => {
         return (
-          <div className='footer'>
+          <div>
             <img src={val.img} alt='test'/> 
             <h3 className='name'>Title {val.title}</h3>
-            <h3 className='price'>Artist {val.artist}</h3>
+            <h3>Artist {val.artist}</h3>
             <h3>Price {val.price}</h3>
             
           </div>

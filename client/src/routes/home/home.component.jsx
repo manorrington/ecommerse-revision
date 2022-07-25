@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Menu from '../../components/menu/menu.component';
-import '../../sass/index.scss'
+import Footer from '../../components/Footer';
+import Slider from '../../components/Slider';
 
 function Home() {
 
@@ -9,7 +10,7 @@ function Home() {
     {
       "id": 1,
       "title": "hats",
-      "imageUrl": "https://i.ibb.co/cvpntL1/hats.png"
+      "imageUrl": "https://media.pitchfork.com/photos/626be39b8eeb4ac0c1275b4e/1:1/w_600/Future-I-Never-Liked-You-2022.jpeg"
     },
     {
       "id": 2,
@@ -36,7 +37,10 @@ function Home() {
   return(
     <div>
       <Outlet />
+      <Slider />
       <Menu categories={categories} />
+      <Menu categories={categories} />
+      <Footer />
     </div>
   
   

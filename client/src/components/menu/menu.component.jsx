@@ -9,6 +9,7 @@ const Menu = ({categories}) => {
       ))};
       
     </div>
+    
     );
 }
  
