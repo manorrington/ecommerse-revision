@@ -2,13 +2,14 @@ import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
 import '../../sass/nav.styles.scss'
+import logo from '../../assets/images/logo.png'
 
 const Nav = () => {
   return (
     <Fragment>
       <div className='navigation'>
         <Link className='logo-container' to='/'>
-          <img className='logo' src='../../assets/logo.png' alt='logo'/>
+          <img className='logo' src={logo} alt='logo'/>
         </Link>
         <div className='nav-links-container'>
           <Link className='nav-link' to='/'>
@@ -19,6 +20,9 @@ const Nav = () => {
           </Link>
           <Link className='nav-link' to='/contact'>
             CONTACT
+          </Link>
+          <Link className='nav-link' to='/test'>
+            TESTING
           </Link>
         </div>
       </div>

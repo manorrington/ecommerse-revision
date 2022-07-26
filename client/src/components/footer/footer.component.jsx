@@ -2,7 +2,9 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-import logo from '../assets/images/logo.png'
+import logo from '../../assets/images/logo.png'
+
+import '../../sass/footer.scss'
 
 
 const Footer = () => {

@@ -7,12 +7,13 @@
     position: relative;
     justify-content: space-evenly;
     left: -57px;
+    
   
     img {
-        width: 210%;
-        height: 42%;
-        object-fit: contain;
-        margin-bottom: 5px
+      width: 100%;
+      height: 56%;
+      object-fit: cover;
+      margin-bottom: 18px;
     }
   
     button {
@@ -25,7 +26,8 @@
   
     &:hover {
       img {
-        opacity: 0.8;
+        // opacity: 0.8;
+        cursor: pointer;
       }
   
       button {
@@ -34,20 +36,26 @@
       }
     }
   
-    // .footer {
-    //   width: 100%;
-    //   height: 5%;
-    //   display: flex;
-    //   justify-content: space-between;
-    //   font-size: 18px;
+    .footer {
+      width: 250px;
+      box-shadow: 0 0 10px #000000;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 0px 25px 25px 0;
   
       .name {
         width: 177%;
+        font-size: 1.09rem;
     //     margin-bottom: 15px;
       }
   
       .price {
-        width: 256%;
+        font-size: 1.09rem;
       }
-    // }
+    }
   }
+
+  .filtercontaier {
+    position: relative;
+    left: 44px;
+}
