@@ -1,6 +1,11 @@
 const express = require("express");
 const app = express();
 const mysql = require("mysql");
+const bodyparser = require("body-parser");
+const cors = require("cors");
+
+app.use(cors());
+app.use(express.json());
 
 // DB connection
 const db = mysql.createConnection({
@@ -19,16 +24,26 @@ db.connect((error) => {
 });
 
 // displaying the data from DB
-app.get("/", function (req, res) {
-  const sqlInsert = "SELECT * FROM testing_table";
-  db.query(sqlInsert, (err, result) => {
+// app.get("/products", function (req, res) {
+//   const sqlInsert = "SELECT * FROM testing_table";
+//   db.query(sqlInsert, (err, result) => {
+//     if (err) {
+//       throw error;
+//     } else {
+//       res.send(result);
+//     }
+//   });
+// });
+
+app.get('/products', (req, res) => {
+  db.query('SELECT * FROM testing_table', (err, result) => {
     if (err) {
       throw error;
     } else {
       res.send(result);
     }
-  });
-});
+  })
+})
 
 // port
 app.listen(3001, () => {

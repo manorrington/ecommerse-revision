@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    position: relative;
+    right: 168px;
+  
+    h2 {
+      margin: 10px 0;
+    }
+
+    h1 {
+        position: relative;
+        left: 264px;
+    }
+}
+
+.formcontainer {
+    input {
+        padding: 21px 35px;
+        width: 40vw;
+    }
+
+.inputtext {
+    padding: 72px 294px; 
+  }
+}
+
