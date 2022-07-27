@@ -39,7 +39,6 @@ function Home() {
       <Outlet />
       <Slider />
       <Menu categories={categories} />
-      <Menu categories={categories} />
       <Footer />
     </div>
   

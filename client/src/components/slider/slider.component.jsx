@@ -28,6 +28,14 @@ function Slider() {
             alt="Third slide"
           />
         </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://cdn.shopify.com/s/files/1/0287/4323/7725/files/BeastieBoys-CYH_2000x500_PreOrder_1864x466.jpg?v=1653000643"
+            alt="Third slide"
+          />
+        </Carousel.Item>
       </Carousel>
     </div>
   );

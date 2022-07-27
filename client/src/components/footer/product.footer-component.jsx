@@ -1,11 +1,11 @@
 import React from 'react'
 
-import '../../sass/footer.scss'
+import '../../sass/productfooter.scss'
 
 
-const Footer = () => {
+const ProductFooter = () => {
     return (
-        <section className="footer">
+        <section className="footerp">
         <hr className="footer-seperator" />
         <section className="footer-social-media">
           <a href="/" ><i class="fa-brands fa-github"></i></a>
@@ -32,4 +32,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default ProductFooter

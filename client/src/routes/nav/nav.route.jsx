@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
 import '../../sass/nav.styles.scss'
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/newlogo.PNG'
 
 const Nav = () => {
   return (
@@ -20,9 +20,6 @@ const Nav = () => {
           </Link>
           <Link className='nav-link' to='/contact'>
             CONTACT
-          </Link>
-          <Link className='nav-link' to='/test'>
-            TESTING
           </Link>
         </div>
       </div>
